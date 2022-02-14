@@ -67,3 +67,10 @@ keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 -- keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 -- keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
 
+keymap("n", "<leader>xx", "<cmd>Trouble<cr>", opts)
+keymap("n", "<leader>xw", "<cmd>Trouble workspace_diagnostics<cr>", opts)
+keymap("n", "<leader>xd", "<cmd>Trouble document_diagnostics<cr>", opts)
+keymap("n", "<leader>xl", "<cmd>Trouble loclist<cr>", opts)
+keymap("n", "<leader>xq", "<cmd>Trouble quickfix<cr>", opts)
+keymap("n", "gR", "<cmd>Trouble lsp_references<cr>", opts)
+
