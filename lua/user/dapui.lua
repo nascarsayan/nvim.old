@@ -1,4 +1,9 @@
-require("dapui").setup({
+local status_ok, p = pcall(require, "nvim-dap-virtual-text")
+if not status_ok then
+  return
+end
+
+p.setup({
   icons = { expanded = "▾", collapsed = "▸" },
   mappings = {
     -- Use a table to apply multiple mappings
